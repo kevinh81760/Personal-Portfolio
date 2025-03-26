@@ -1,42 +1,37 @@
 import React from 'react';
 
 function Navbar() {
-    const handleHomeClick = () => {
-        alert("Shush is gay");
-    };
-
-    const handleAboutClick = () => {
-        alert("Shush is gay");
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
     }
+  };
 
-    const handleProjectClick = () => {
-        alert("Shush is gay");
-    }
+  return (
+    <div className="border-b border-white/20">
+      <button
+        onClick={() => scrollTo("home")}
+        className="text-2xl p-4 hover:text-neutral-300 cursor-none font-medium"
+      >
+        Home
+      </button>
 
-    return (
-        <div> 
-            <button 
-                onClick={handleHomeClick}
-                className="text-white text-2xl p-3 hover:text-neutral-300"
-            >
-                Home
-            </button>
+      <button
+        onClick={() => scrollTo("about")}
+        className="text-2xl p-3 hover:text-neutral-300 cursor-none font-medium"
+      >
+        About
+      </button>
 
-            <button 
-                onClick={handleAboutClick}
-                className="text-white text-2xl p-3 hover:text-neutral-300"
-            >
-                About
-            </button>
-
-            <button 
-                onClick={handleProjectClick}
-                className="text-white text-2xl p-3 hover:text-neutral-300"
-                >
-                Projects    
-            </button>
-        </div>
-    )
+      <button
+        onClick={() => scrollTo("projects")}
+        className="text-2xl p-3 hover:text-neutral-300 cursor-none font-medium"
+      >
+        Projects
+      </button>
+    </div>
+  );
 }
 
 export default Navbar;

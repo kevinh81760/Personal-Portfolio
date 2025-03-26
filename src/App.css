@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
-body {
-  background: #000000;
-  font-family: 'Unbounded';
+html, body{
+  background: black;
+  background-image: linear-gradient(to bottom, #000000, #121212);
+  font-family: 'unbounded';
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  cursor:none;
+  color: #ffffff;
 }
+.cursor-none * {
+  cursor: none;
+}
+
 

@@ -10,12 +10,22 @@ function Portfolio() {
     return (
         <>
             <Navbar />
-            <LandingPage />
-            <AboutMe />
-            <Projects />
+
+            <div id="home">
+                <LandingPage />
+            </div>
+
+            <div id="about" className="scroll-mt-90">
+                <AboutMe />
+            </div>
+
+            <div id="projects" className="scroll-mt-110">
+                <Projects />
+            </div>
+
             <Gallery />
         </>
-    )
+    );
 }
 
 export default Portfolio;
