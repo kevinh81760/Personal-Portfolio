@@ -3,9 +3,7 @@ import { useEffect, useState, useRef } from "react";
 export default function CustomCursor() {
   const [isClicked, setIsClicked] = useState(false);
   const cursorRef = useRef(null);
-
   const mouse = useRef({ x: 0, y: 0 });
-  const pos = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -20,20 +18,20 @@ export default function CustomCursor() {
     window.addEventListener("mouseup", handleMouseUp);
 
     const followMouse = () => {
-      const lerp = 0.1; // ← how "floaty" it is (0.1 = very smooth, 0.3 = snappy)
-      pos.current.x += (mouse.current.x - pos.current.x) * lerp;
-      pos.current.y += (mouse.current.y - pos.current.y) * lerp;
+      const update = () => {
+        const size = isClicked ? 24 : 36;
+        const offset = size / 2;
 
-      const size = isClicked ? 24 : 36;
-      const offset = size / 2;
+        if (cursorRef.current) {
+          cursorRef.current.style.transform = `translate(${mouse.current.x - offset}px, ${mouse.current.y - offset}px)`;
+          cursorRef.current.style.width = `${size}px`;
+          cursorRef.current.style.height = `${size}px`;
+        }
 
-      if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate(${pos.current.x - offset}px, ${pos.current.y - offset}px)`;
-        cursorRef.current.style.width = `${size}px`;
-        cursorRef.current.style.height = `${size}px`;
-      }
+        requestAnimationFrame(update);
+      };
 
-      requestAnimationFrame(followMouse);
+      update();
     };
 
     followMouse();
