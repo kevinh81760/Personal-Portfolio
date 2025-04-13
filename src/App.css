@@ -28,3 +28,6 @@ html, body{
   animation: blink 1s step-start infinite;
 }
 
+.cursor-none {
+  cursor: none;
+}
