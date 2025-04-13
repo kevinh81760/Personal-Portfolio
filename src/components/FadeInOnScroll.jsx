@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 
 export default function FadeInOnScroll({ children, delay = 0 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: false });
 
   return (
     <motion.div
