@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function TypingAnimation({ text = '', speed = 50, className = '' }) {
+function TypingAnimation({ text = '', speed = -50, className = '' }) {
     const [displayedText, setDisplayedText] = useState('');
     const [isTypingComplete, setIsTypingComplete] = useState(false); // ✅ Track if typing done
 
