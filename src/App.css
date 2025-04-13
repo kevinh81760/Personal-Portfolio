@@ -4,7 +4,7 @@
 html, body{
   background: black;
   background-image: linear-gradient(to bottom, #000000, #121212);
-  font-family: 'unbounded';
+  font-family: 'Unbounded', sans-serif;
   overflow-x: hidden;
   background-repeat: no-repeat;
   margin: 0;
