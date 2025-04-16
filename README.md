@@ -1,12 +1,33 @@
-# React + Vite
+# 🧑‍💻 Kevin Ha — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This project showcases my work, skills, and background as a software developer. It's built using modern tools like **React**, **Vite**, **Tailwind CSS**, and **Framer Motion** for smooth animations and performance.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ [React](https://reactjs.org/) — Frontend framework
+- ⚡ [Vite](https://vitejs.dev/) — Lightning-fast development/build tool
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS framework
+- 🧠 [Framer Motion](https://www.framer.com/motion/) — Powerful animation library for React
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Live Demo
+
+👉 [kevinkha.com](https://kevinkha.com)
+
+---
+
+## 🛠️ Features
+
+- Responsive design (mobile-friendly)
+- Smooth page transitions and animations with Framer Motion
+- Projects section to showcase real work
+- About, Contact, and Socials integration
+- Modern UI/UX with Tailwind CSS
+
+---
+
+## 📁 Folder Structure
+
